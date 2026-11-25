@@ -41,3 +41,9 @@ Szczegóły techniczne znajdą się w katalogu `docs/`.
 ## Licencja
 
 Projekt jest dostępny na licencji [MIT](LICENSE).
+
+
+## For developers
+
+Technical documentation lives in the [`docs/`](docs/) folder.
+Start with the [contribution guidelines](docs/CONTRIBUTING.md).
