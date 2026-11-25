@@ -26,3 +26,26 @@ Rules:
 - one branch = one feature or one task,
 - description in English, words separated by hyphens,
 - always create a branch from the up-to-date `main`.
+
+
+## 3. Commit messages
+
+We use [Conventional Commits](https://www.conventionalcommits.org/).
+
+Format: `type(scope): short description`
+
+```text
+feat(auth): add TOTP-based two-factor login
+
+Explain WHY the change is needed, not only what changed.
+```
+
+Rules:
+- write in English, in the imperative mood ("add", not "added"),
+- subject line up to about 72 characters, no period at the end,
+- `scope` is the part of the system, e.g. `auth`, `tickets`, `docker`,
+- the body explains the reason for the change,
+- one commit = one logical change.
+
+Types are the same as for branches, plus `style`, `build`, `perf`
+and `security`.
