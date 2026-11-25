@@ -1,0 +1,29 @@
+# Sekrety i konfiguracja lokalna
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Django
+db.sqlite3
+*.log
+media/
+staticfiles/
+
+# Narzędzia i edytory
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Testy i pokrycie
+.pytest_cache/
+.coverage
+htmlcov/
