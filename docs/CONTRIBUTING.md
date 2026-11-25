@@ -49,3 +49,25 @@ Rules:
 
 Types are the same as for branches, plus `style`, `build`, `perf`
 and `security`.
+
+
+## 4. Pull Requests
+
+Every PR must have a description with three parts:
+
+1. **What** changed.
+2. **Why** it changed.
+3. **How to test** it (a screenshot, if the change is visual).
+
+Workflow:
+1. Push the branch and open a PR to `main`.
+2. Review your own diff before merging (read it as a stranger would).
+3. Merge the PR, then delete the branch.
+4. Update local `main`: `git switch main && git pull`.
+
+## 5. Secrets
+
+Never commit secrets: passwords, tokens, API keys, `.env` files or real
+personal data. All data in this project is fictional.
+If a secret is committed by accident, revoke it immediately. Removing
+it from the history is not enough, because it may already be copied.
